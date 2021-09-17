@@ -1,0 +1,176 @@
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+section {
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.graphics {
+    width: 416px;
+    height: 471px;
+    background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+}
+
+img {
+    position: absolute;
+}
+
+.graph {
+    padding-top: 34px;
+}
+
+.girl {
+    padding: 0 0 10px 188px;
+}
+
+.line {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5273);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 48px 13px 0 370px;
+}
+
+.close p {
+    font-family: SFProDisplay;
+    margin: auto;
+    font-weight: bold;
+    font-size: 30px;
+    color: #894AC9;
+    text-align: center;
+}
+
+h1 {
+    height: 41px;
+    left: 84px;
+    right: 79px;
+    top: 80px;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 28px 0 0 0;
+    padding-top: 80px;
+    letter-spacing: 3px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 93px 0 20px 0;
+    align-items: end;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}
+
+ul:hover {
+    color: #FFFFFF;
+}
+
+li {
+    font-size: 13px;
+}
+
+._1 {
+    height: 151px;
+}
+
+._2, ._3 {
+    height: 176px;
+}
+
+.column  {
+    width: 118px;
+    margin: 10px;
+    background: #F3F2F9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.column:hover {
+    cursor: pointer;
+    background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+}
+
+.save {
+    background: rgba(252, 191, 89, 1);
+    border-radius: 5px 5px 0 0;
+    height: 25px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+._one {
+    background: rgba(252, 167, 89, 1);
+}
+
+.save p {
+    margin: 0;
+    padding: 5px;
+}
+
+.sale {
+    background: rgba(252, 167, 89, 1);
+    border-radius: 0 0 5px 5px;
+    font-size: 9px;
+    height: 16px;
+    font-weight: bolder;
+    margin-top: 16%;
+}
+
+.sale p {
+    margin: 0;
+    padding: 3px;
+}
+
+.num, .month {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.month {
+    padding: 0 0 7px 0;
+}
+
+.continue {
+    cursor: pointer;
+    font-size: 22px;
+    width: 374px;
+    height: 50px;
+    color: #FFFFFF;
+    background: linear-gradient(225deg, #542285 0%, #222266 100%);
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.billing {
+    margin: 20px 0 50px 0;
+    color: rgba(125, 125, 128, 1);
+    text-align: center;
+}
+
+.billing::after {
+    display: flex;
+    content: '';
+    position: absolute;
+    width: 134px;
+    height: 5px;
+    background: #000000;
+    border-radius: 100px;
+    left: calc(50% - 134px/2);
+    margin: 26px 0 0 0;
+}
