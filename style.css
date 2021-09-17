@@ -14,6 +14,12 @@ section {
     background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 }
 
+.dark {
+    width: 416px;
+    height: 471px;
+    background: black;
+}
+
 .graph {
     position: absolute;
     padding-top: 34px;
@@ -50,12 +56,16 @@ section {
 
 .close {
     position: absolute;
-    background: rgba(255, 255, 255, 0.5273);
-    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     width: 32px;
     height: 32px;
     margin: 48px 13px 0 370px;
+}
+
+.close:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5273);
 }
 
 .close p {
@@ -84,7 +94,7 @@ h1 {
 .container {
     display: flex;
     justify-content: center;
-    margin: 93px 0 20px 0;
+    padding: 93px 0 20px 0;
     align-items: end;
 }
 
@@ -94,11 +104,7 @@ ul {
     margin: 0;
 }
 
-ul:hover {
-    color: #FFFFFF;
-}
-
-li {
+.other {
     font-size: 13px;
 }
 
@@ -118,9 +124,33 @@ li {
     text-align: center;
 }
 
-.column:hover {
+.dark_theme {
+    width: 118px;
+    margin: 10px;
+    background: rgba(55, 54, 64, 1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.list {
+    height: 151px;
+    border-radius: 5px;
+}
+
+.list_dark_theme {
+    height: 151px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.list, three {
+    height: 135px;
+}
+
+.list:hover {
     cursor: pointer;
     background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+    color: #FFFFFF;
 }
 
 .save {
@@ -146,7 +176,6 @@ li {
     font-size: 9px;
     height: 16px;
     font-weight: bolder;
-    margin-top: 16%;
 }
 
 .sale p {
@@ -164,15 +193,22 @@ li {
 }
 
 .continue {
-    cursor: pointer;
     font-size: 22px;
     width: 374px;
-    height: 50px;
+    height: 40px;
     color: #FFFFFF;
     background: linear-gradient(225deg, #542285 0%, #222266 100%);
     border-radius: 5px;
     display: block;
     margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.continue:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #542285 90%, #222266 100%);
+
 }
 
 .billing {
@@ -192,3 +228,4 @@ li {
     left: calc(50% - 134px/2);
     margin: 26px 0 0 0;
 }
+
