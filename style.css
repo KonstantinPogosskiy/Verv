@@ -14,16 +14,34 @@ section {
     background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 }
 
-img {
-    position: absolute;
-}
-
 .graph {
+    position: absolute;
     padding-top: 34px;
 }
 
+.group {
+    position: absolute;
+    color: #FFFFFF;
+    left: 7.88%;
+    top: 38%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 12px;
+}
+
+.paragraph {
+    margin: 0 0 33px 0;
+
+}
+
+.paragraph::before {
+    position: absolute;
+
+    content: url("img/line/Path 1.svg");
+}
+
 .girl {
-    padding: 0 0 10px 188px;
+    position: absolute;
+    padding: 0 0 0 188px;
 }
 
 .line {
