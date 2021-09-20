@@ -9,6 +9,7 @@ let prev = document.querySelector('.slider-prev');
 theme.addEventListener('click', toggler);
 
 function toggler() {
+
     main.classList.toggle('dark');
 
         for(let el of column) {

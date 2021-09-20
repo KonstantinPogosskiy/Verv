@@ -1,31 +1,37 @@
 html {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
-
 section {
     display: block;
     margin: auto;
     position: relative;
 }
-
 .graphics {
     width: 416px;
     height: 471px;
     background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 }
-
+.buttonCase {
+    cursor: pointer;
+    width: 400px;
+    margin: 75px 0 0 0;
+    color: white;
+    opacity: 0.7;
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    font-size: 24px;
+}
 .dark {
     width: 416px;
     height: 471px;
     background: black;
     transition: all ease 0.5s;
 }
-
 .graph {
     position: absolute;
     padding-top: 34px;
 }
-
 .group {
     position: absolute;
     color: #FFFFFF;
@@ -34,39 +40,42 @@ section {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 12px;
 }
-
 .paragraph {
     margin: 0 0 33px 0;
 }
-
 .paragraph::before {
     position: absolute;
     content: url("img/line/Path 1.svg");
 }
-
 .girl {
     position: absolute;
     padding: 0 0 0 188px;
 }
-
 .line {
     position: relative;
 }
-
 .theme {
     position: absolute;
     background: rgba(255, 255, 255, 0.3);
     color: #625f5f;
     border-radius: 50%;
+    margin: 25px 10px 0 360px;
     padding: 5px;
     transition: all ease 0.5s;
 }
-
-.theme:hover {
+.theme_2 {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    color: #625f5f;
+    border-radius: 50%;
+    margin: 25px 10px 0 360px;
+    padding: 5px;
+    transition: all ease 0.5s;
+}
+.theme, .theme_2:hover {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.5273);
 }
-
 h1 {
     height: 41px;
     left: 84px;
@@ -80,32 +89,26 @@ h1 {
     padding-top: 80px;
     letter-spacing: 3px;
 }
-
 .container {
     display: flex;
     justify-content: center;
     padding: 93px 0 20px 0;
     align-items: end;
 }
-
 ul {
     list-style-type: none;
     padding: 5px;
     margin: 0;
 }
-
 .other {
     font-size: 13px;
 }
-
 ._1 {
     height: 151px;
 }
-
 ._2, ._3 {
     height: 176px;
 }
-
 .column  {
     width: 118px;
     margin: 10px;
@@ -114,7 +117,6 @@ ul {
     text-align: center;
     transition: all ease 0.5s;
 }
-
 .dark_theme {
     width: 118px;
     margin: 10px;
@@ -123,29 +125,24 @@ ul {
     text-align: center;
     transition: all ease 0.5s;
 }
-
 .list {
     height: 151px;
     border-radius: 5px;
 }
-
 .list_dark_theme {
     height: 151px;
     border-radius: 5px;
     color: #FFFFFF;
     transition: all ease 0.5s;
 }
-
 .three {
     height: 135px;
 }
-
 .list:hover {
     cursor: pointer;
     background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     color: #FFFFFF;
 }
-
 .save {
     background: rgba(252, 191, 89, 1);
     border-radius: 5px 5px 0 0;
@@ -153,16 +150,13 @@ ul {
     font-size: 13px;
     font-weight: bolder;
 }
-
 ._one {
     background: rgba(252, 167, 89, 1);
 }
-
 .save p {
     margin: 0;
     padding: 5px;
 }
-
 .sale {
     background: rgba(252, 167, 89, 1);
     border-radius: 0 0 5px 5px;
@@ -170,21 +164,17 @@ ul {
     height: 16px;
     font-weight: bolder;
 }
-
 .sale p {
     margin: 0;
     padding: 3px;
 }
-
 .num, .month {
     font-size: 24px;
     font-weight: bold;
 }
-
 .month {
     padding: 0 0 7px 0;
 }
-
 .continue {
     font-size: 22px;
     width: 374px;
@@ -197,19 +187,15 @@ ul {
     text-align: center;
     padding-top: 10px;
 }
-
 .continue:hover {
     cursor: pointer;
     background: linear-gradient(180deg, #542285 90%, #222266 100%);
-
 }
-
 .billing {
     margin: 20px 0 50px 0;
     color: rgba(125, 125, 128, 1);
     text-align: center;
 }
-
 .billing::after {
     display: flex;
     content: '';
@@ -221,7 +207,6 @@ ul {
     left: calc(50% - 134px/2);
     margin: 26px 0 0 0;
 }
-
 .slider {
     position: absolute;
     height: 170px;
@@ -229,7 +214,6 @@ ul {
     margin: auto;
     z-index: 2;
 }
-
 .slider-line {
     position: relative;
     display: flex;
@@ -238,7 +222,6 @@ ul {
     left: 0;
     transition: all ease 1s;
 }
-
 .slide {
     margin: 10px;
     height: 150px;
@@ -247,7 +230,6 @@ ul {
     border-radius: 10px;
     transition: all ease 0.5s;
 }
-
 .slide-dark {
     margin: 10px;
     height: 150px;
@@ -257,29 +239,23 @@ ul {
     color: #fff;
     transition: all ease 0.5s;
 }
-
 .slide-title {
     margin: 20px;
 }
 .slide-comment {
     margin: 10px 20px 10px 20px;
 }
-
 .comment {
     display: flex;
     justify-content: space-between;
 }
-
 .author {
     margin: 20px;
 }
-
 .stars {
     margin: 0 20px 0 20px;
     color: rgba(252, 191, 89, 1);
 }
-
-
 .overflow {
     overflow: hidden;
     display: flex;
