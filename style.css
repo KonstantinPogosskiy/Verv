@@ -18,6 +18,7 @@ section {
     width: 416px;
     height: 471px;
     background: black;
+    transition: all ease 0.5s;
 }
 
 .graph {
@@ -36,12 +37,10 @@ section {
 
 .paragraph {
     margin: 0 0 33px 0;
-
 }
 
 .paragraph::before {
     position: absolute;
-
     content: url("img/line/Path 1.svg");
 }
 
@@ -54,27 +53,18 @@ section {
     position: relative;
 }
 
-.close {
+.theme {
     position: absolute;
     background: rgba(255, 255, 255, 0.3);
+    color: #625f5f;
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    margin: 48px 13px 0 370px;
+    padding: 5px;
+    transition: all ease 0.5s;
 }
 
-.close:hover {
+.theme:hover {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.5273);
-}
-
-.close p {
-    font-family: SFProDisplay;
-    margin: auto;
-    font-weight: bold;
-    font-size: 30px;
-    color: #894AC9;
-    text-align: center;
 }
 
 h1 {
@@ -122,6 +112,7 @@ ul {
     background: #F3F2F9;
     border-radius: 5px;
     text-align: center;
+    transition: all ease 0.5s;
 }
 
 .dark_theme {
@@ -130,6 +121,7 @@ ul {
     background: rgba(55, 54, 64, 1);
     border-radius: 5px;
     text-align: center;
+    transition: all ease 0.5s;
 }
 
 .list {
@@ -141,6 +133,7 @@ ul {
     height: 151px;
     border-radius: 5px;
     color: #FFFFFF;
+    transition: all ease 0.5s;
 }
 
 .three {
@@ -229,3 +222,74 @@ ul {
     margin: 26px 0 0 0;
 }
 
+.slider {
+    position: absolute;
+    height: 170px;
+    width: 300px;
+    margin: auto;
+    z-index: 2;
+}
+
+.slider-line {
+    position: relative;
+    display: flex;
+    height: 150px;
+    width: 900px;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.slide {
+    margin: 10px;
+    height: 150px;
+    width: 300px;
+    background: rgba(243, 242, 249, 1);
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+
+.slide-dark {
+    margin: 10px;
+    height: 150px;
+    width: 300px;
+    background: linear-gradient(225deg, #262526 0%, #19181A 100%);
+    border-radius: 10px;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+
+.slide-title {
+    margin: 20px;
+}
+.slide-comment {
+    margin: 10px 20px 10px 20px;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author {
+    margin: 20px;
+}
+
+.stars {
+    margin: 0 20px 0 20px;
+    color: rgba(252, 191, 89, 1);
+}
+
+
+.overflow {
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    width: 416px;
+    height: 170px;
+    position: absolute;
+    top: -25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
