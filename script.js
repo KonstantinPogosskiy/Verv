@@ -9,8 +9,8 @@ let arrows = document.querySelector('.buttonCase');
 const sliderLine = document.querySelector('.slider-line');
 
 // touch swipes
-document.addEventListener('touchstart', handleTouchStart, false);
-document.addEventListener('touchmove', handleTouchMove, false);
+document.addEventListener('touchstart', handleTouchStart);
+document.addEventListener('touchmove', handleTouchMove);
 
 let x1 = null;
 
@@ -76,11 +76,6 @@ function slidePrev() {
     sliderLine.style.left = -offset + 'px';
 }
 
-(setInterval(() => {
-    offset += 370;
-    if (offset > 740) {
-        offset = 0
-    }
-    sliderLine.style.left = -offset + 'px';
-}, 5000))
+(setInterval(slideNext, 5000))
+
 
