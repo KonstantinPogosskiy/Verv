@@ -1,5 +1,6 @@
 html {
     font-family: 'Barlow Semi Condensed', sans-serif;
+    user-select: none;
 }
 body {
     margin: 0;

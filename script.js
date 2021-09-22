@@ -12,6 +12,9 @@ const sliderLine = document.querySelector('.slider-line');
 document.addEventListener('touchstart', handleTouchStart);
 document.addEventListener('touchmove', handleTouchMove);
 
+document.addEventListener('mousedown', handleMouseStart);
+document.addEventListener('mousemove', handleMouseMove);
+
 let x1 = null;
 
 function handleTouchStart(event) {
@@ -30,6 +33,24 @@ function handleTouchMove(event) {
 
     x1 = null;
 }
+
+function handleMouseStart(event) {
+    x1 = event.clientX;
+}
+
+function handleMouseMove(event) {
+    if (!x1) {
+        return false;
+    }
+    let x2 = event.clientX;
+    let xDiff = x2 - x1;
+
+    if (xDiff > 0) slidePrev()
+    else slideNext();
+
+    x1 = null;
+}
+
 // --------------------------------------
 
 theme.addEventListener('click', toggler);
@@ -58,6 +79,7 @@ function toggler() {
 
 next.addEventListener('click', slideNext);
 prev.addEventListener('click', slidePrev);
+
 let offset = 0;
 
 function slideNext() {
@@ -77,5 +99,4 @@ function slidePrev() {
 }
 
 (setInterval(slideNext, 5000))
-
 
