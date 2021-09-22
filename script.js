@@ -6,6 +6,31 @@ let slide = document.querySelectorAll('.slide');
 let next = document.querySelector('.slider-next');
 let prev = document.querySelector('.slider-prev');
 let arrows = document.querySelector('.buttonCase');
+const sliderLine = document.querySelector('.slider-line');
+
+// touch swipes
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+let x1 = null;
+
+function handleTouchStart(event) {
+    x1 = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+    if (!x1) {
+        return false;
+    }
+    let x2 = event.touches[0].clientX;
+    let xDiff = x2 - x1;
+
+    if (xDiff > 0) slidePrev()
+    else slideNext();
+
+    x1 = null;
+}
+// --------------------------------------
 
 theme.addEventListener('click', toggler);
 
@@ -17,7 +42,6 @@ function toggler() {
     if (arrows.style.color === 'white') {
         arrows.style.color = 'black';
     }
-
 
     main.classList.toggle('dark');
 
@@ -32,24 +56,25 @@ function toggler() {
     }
 }
 
+next.addEventListener('click', slideNext);
+prev.addEventListener('click', slidePrev);
 let offset = 0;
-const sliderLine = document.querySelector('.slider-line');
 
-next.addEventListener('click', () => {
+function slideNext() {
     offset += 370;
     if (offset > 740) {
         offset = 0
     }
     sliderLine.style.left = -offset + 'px';
-})
+}
 
-prev.addEventListener('click', () => {
+function slidePrev() {
     offset -= 370;
     if (offset < 0) {
         offset = 740
     }
     sliderLine.style.left = -offset + 'px';
-})
+}
 
 (setInterval(() => {
     offset += 370;
@@ -58,3 +83,4 @@ prev.addEventListener('click', () => {
     }
     sliderLine.style.left = -offset + 'px';
 }, 5000))
+
