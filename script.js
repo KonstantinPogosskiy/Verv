@@ -95,17 +95,17 @@ prev.addEventListener('click', slidePrev);
 let offset = 0;
 
 function slideNext() {
-    offset += 335;
-    if (offset > 670) {
+    offset += 355;
+    if (offset > 710) {
         offset = 0;
     }
     sliderLine.style.left = -offset + 'px';
 }
 
 function slidePrev() {
-    offset -= 335;
+    offset -= 355;
     if (offset < 0) {
-        offset = 670;
+        offset = 710;
     }
     sliderLine.style.left = -offset + 'px';
 }

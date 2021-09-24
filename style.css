@@ -111,7 +111,7 @@ ul {
     height: 156px;
 }
 .column {
-    width: 118px;
+    width: 33.3%;
     margin: 0 5px 0 5px;
     background: #F3F2F9;
     border-radius: 5px;
@@ -123,10 +123,9 @@ ul {
     transition: all ease 0.5s;
 }
 .list {
-    width: 105px;
+    width: 108px;
     height: 131px;
     border-radius: 5px;
-    transition: all ease 0.5s;
 }
 ._three {
     height: 115px;
@@ -207,6 +206,7 @@ ul {
 }
 .overflow {
     overflow: hidden;
+    cursor: pointer;
     display: flex;
     justify-content:center;
     width: 375px;
@@ -218,20 +218,20 @@ ul {
 .slider {
     position: absolute;
     margin: 0 auto;
-    width: 335px;
+    width: 355px;
     height: 145px;
     z-index: 2;
  }
 .slider-line {
     position: relative;
     display: flex;
-    width: 1005px;
+    width: 1065px;
     transition: all ease 1s;
 }
 .slide {
     margin: 3px;
     height: 140px;
-    width: 335px;
+    width: 355px;
     background: rgba(243, 242, 249, 1);
     border-radius: 10px;
     transition: all ease 0.5s;
