@@ -3,52 +3,64 @@ html {
     user-select: none;
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     background: #1a1a1a;
 }
+
 .app {
-   overflow-x: hidden;
+    overflow-x: hidden;
 }
+
 .container {
     margin: 0 auto;
     width: 355px;
     height: 100%;
 }
+
 .block {
     position: relative;
     height: 419px;
     width: 375px;
     margin: auto;
 }
+
 ._light {
     background: #ffdfb3;
 }
+
 ._bitmap {
     background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 }
+
 .graphic {
     margin: 0;
     position: relative;
 }
+
 ._product {
     height: 249px;
     padding-bottom: 20px;
     transition: all ease 0.5s;
 }
+
 .dark {
     background: black;
 }
+
 .product {
     display: flex;
     position: relative;
     padding: 93px 0 0 0;
     align-items: end;
 }
+
 ._continue {
     height: 124px;
     transition: all ease 0.5s;
 }
+
 h1 {
     height: 41px;
     font-size: 34px;
@@ -59,11 +71,13 @@ h1 {
     margin: 0;
     letter-spacing: 3px;
 }
+
 .graph {
     position: absolute;
     width: 100%;
     padding-top: 155px;
 }
+
 .group {
     color: #FFFFFF;
     left: 7.88%;
@@ -71,17 +85,21 @@ h1 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 12px;
 }
+
 .paragraph {
     margin: 25px 0 0 0;
 }
+
 .paragraph::before {
     content: url("img/line/Path 1.svg");
 }
+
 .girl {
     position: absolute;
     left: 40%;
     top: 25%;
 }
+
 .theme {
     position: absolute;
     background: rgba(255, 255, 255, 0.3);
@@ -91,25 +109,31 @@ h1 {
     padding: 5px;
     transition: all ease 0.5s;
 }
+
 .theme:hover {
     cursor: pointer;
     background: rgba(226, 199, 199, 0.3);
     color: #000000;
 }
+
 ul {
     list-style-type: none;
     padding: 5px;
     margin: 0;
 }
+
 .other {
     font-size: 13px;
 }
+
 ._1 {
     height: 131px;
 }
+
 ._2, ._3 {
     height: 156px;
 }
+
 .column {
     width: 33.3%;
     margin: 0 5px 0 5px;
@@ -118,30 +142,37 @@ ul {
     text-align: center;
     transition: all ease 0.5s;
 }
+
 .dark_theme {
     background: rgba(55, 54, 64, 1);
     transition: all ease 0.5s;
 }
+
 .list {
     width: 108px;
     height: 131px;
     border-radius: 5px;
 }
+
 ._three {
     height: 115px;
 }
+
 .list_dark_theme {
     color: #FFFFFF;
     transition: all ease 0.5s;
 }
+
 .three {
     height: 135px;
 }
+
 .list:hover {
     cursor: pointer;
     background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
     color: #FFFFFF;
 }
+
 .save {
     background: rgba(252, 191, 89, 1);
     border-radius: 5px 5px 0 0;
@@ -149,11 +180,13 @@ ul {
     font-size: 13px;
     font-weight: bolder;
 }
+
 .save p {
     height: 15px;
     margin: 0;
     padding: 5px;
 }
+
 .sale {
     background: rgba(252, 167, 89, 1);
     border-radius: 0 0 5px 5px;
@@ -161,17 +194,21 @@ ul {
     height: 16px;
     font-weight: bolder;
 }
+
 .sale p {
     margin: 0;
     padding: 3px;
 }
+
 .num, .month {
     font-size: 20px;
     font-weight: bold;
 }
+
 .month {
     padding: 0 0 7px 0;
 }
+
 .continue {
     font-size: 22px;
     width: 355px;
@@ -183,16 +220,19 @@ ul {
     text-align: center;
     padding-top: 10px;
 }
+
 .continue:hover {
     cursor: pointer;
     background: linear-gradient(180deg, #542285 90%, #222266 100%);
 }
+
 .billing {
     margin: 0;
     padding: 20px 0 25px 0;
     color: rgba(125, 125, 128, 1);
     text-align: center;
 }
+
 .billing::after {
     display: flex;
     position: absolute;
@@ -201,33 +241,37 @@ ul {
     height: 5px;
     background: #000000;
     border-radius: 100px;
-    left: calc(50% - 134px/2);
+    left: calc(50% - 134px / 2);
     margin: 26px 0 9px 0;
 }
+
 .overflow {
     overflow: hidden;
     cursor: pointer;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     width: 375px;
     height: 170px;
     position: absolute;
     top: 350px;
     margin: auto;
 }
+
 .slider {
     position: absolute;
     margin: 0 auto;
     width: 355px;
     height: 145px;
     z-index: 2;
- }
+}
+
 .slider-line {
     position: relative;
     display: flex;
     width: 1065px;
-    transition: all ease 1s;
+    transition: all ease 1.5s;
 }
+
 .slide {
     margin: 3px;
     height: 140px;
@@ -236,28 +280,35 @@ ul {
     border-radius: 10px;
     transition: all ease 0.5s;
 }
+
 .slide-dark {
     background: linear-gradient(225deg, #262526 0%, #19181A 100%);
     color: #fff;
 }
+
 .slide-title {
     margin: 20px;
 }
+
 .slide-comment {
     margin: 10px 20px 10px 20px;
 }
+
 .comment {
     display: flex;
     justify-content: space-between;
 }
+
 .author {
     margin: 20px;
 }
+
 .stars {
     margin: 0 20px 0 20px;
     color: rgba(252, 191, 89, 1);
 }
-@media() {
+
+@media () {
     .buttonCase {
         cursor: pointer;
         position: absolute;

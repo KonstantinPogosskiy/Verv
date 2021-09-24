@@ -14,7 +14,7 @@ document.addEventListener('touchstart', handleTouchStart);
 document.addEventListener('touchmove', handleTouchMove);
 
 overflow.addEventListener('mousedown', handleMouseDown);
-overflow.addEventListener('mouseup', handleMouseUp);
+overflow.addEventListener('mousemove', handleMouseMove);
 
 let x1 = null;
 
@@ -39,8 +39,10 @@ function handleMouseDown(event) {
     x1 = event.clientX;
 }
 
-function handleMouseUp(event) {
-
+function handleMouseMove(event) {
+    if (!x1) {
+        return false;
+    }
     let x2 = event.clientX;
     let xDiff = x2 - x1;
 
@@ -72,7 +74,7 @@ function toggler() {
             el.style.display = 'block';
         } else {
             el.style.display = 'none';
-        };
+        }
     }
 
     for(let el of light) {
