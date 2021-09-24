@@ -1,19 +1,20 @@
-let theme = document.querySelector('.theme');
-let main = document.querySelector('.main');
+let theme = document.querySelectorAll('.theme');
 let column = document.querySelectorAll('.column');
 let list = document.querySelectorAll('.list');
+let light = document.querySelectorAll('._light');
 let slide = document.querySelectorAll('.slide');
 let next = document.querySelector('.slider-next');
 let prev = document.querySelector('.slider-prev');
-let arrows = document.querySelector('.buttonCase');
-const sliderLine = document.querySelector('.slider-line');
+// let arrows = document.querySelector('.buttonCase');
+let sliderLine = document.querySelector('.slider-line');
+let overflow = document.querySelector('.overflow');
 
 // touch swipes
 document.addEventListener('touchstart', handleTouchStart);
 document.addEventListener('touchmove', handleTouchMove);
 
-document.addEventListener('mousedown', handleMouseStart);
-document.addEventListener('mousemove', handleMouseMove);
+overflow.addEventListener('mousedown', handleMouseDown);
+overflow.addEventListener('mouseup', handleMouseUp);
 
 let x1 = null;
 
@@ -34,14 +35,12 @@ function handleTouchMove(event) {
     x1 = null;
 }
 
-function handleMouseStart(event) {
+function handleMouseDown(event) {
     x1 = event.clientX;
 }
 
-function handleMouseMove(event) {
-    if (!x1) {
-        return false;
-    }
+function handleMouseUp(event) {
+
     let x2 = event.clientX;
     let xDiff = x2 - x1;
 
@@ -52,10 +51,14 @@ function handleMouseMove(event) {
 }
 
 // --------------------------------------
+for(let el of theme) {
+    el.addEventListener('click', toggler);
+}
 
-theme.addEventListener('click', toggler);
 
 function toggler() {
+
+/*
     arrows.style.color = 'white';
     if (arrows.style.color === 'black') {
         arrows.style.color = 'white';
@@ -63,9 +66,18 @@ function toggler() {
     if (arrows.style.color === 'white') {
         arrows.style.color = 'black';
     }
+*/
+    for(let el of theme) {
+        if (el.style.display === 'none') {
+            el.style.display = 'block';
+        } else {
+            el.style.display = 'none';
+        };
+    }
 
-    main.classList.toggle('dark');
-
+    for(let el of light) {
+        el.classList.toggle('dark');
+    }
     for (let el of column) {
         el.classList.toggle('dark_theme');
     }
@@ -83,20 +95,22 @@ prev.addEventListener('click', slidePrev);
 let offset = 0;
 
 function slideNext() {
-    offset += 370;
-    if (offset > 740) {
-        offset = 0
+    offset += 335;
+    if (offset > 670) {
+        offset = 0;
     }
     sliderLine.style.left = -offset + 'px';
 }
 
 function slidePrev() {
-    offset -= 370;
+    offset -= 335;
     if (offset < 0) {
-        offset = 740
+        offset = 670;
     }
     sliderLine.style.left = -offset + 'px';
 }
 
 (setInterval(slideNext, 5000))
+
+
 
