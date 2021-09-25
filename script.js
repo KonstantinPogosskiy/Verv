@@ -10,8 +10,8 @@ let sliderLine = document.querySelector('.slider-line');
 let overflow = document.querySelector('.overflow');
 
 // touch swipes
-document.addEventListener('touchstart', handleTouchStart);
-document.addEventListener('touchmove', handleTouchMove);
+overflow.addEventListener('touchstart', handleTouchStart);
+overflow.addEventListener('touchmove', handleTouchMove);
 
 overflow.addEventListener('mousedown', handleMouseDown);
 overflow.addEventListener('mousemove', handleMouseMove);
