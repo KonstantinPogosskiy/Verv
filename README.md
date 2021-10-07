@@ -1,1 +1,1 @@
-# Verv
+Test task for Verv, where used HTML,CSS,JavaScript
