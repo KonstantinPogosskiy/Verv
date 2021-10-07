@@ -10,11 +10,20 @@ let sliderLine = document.querySelector('.slider-line');
 let overflow = document.querySelector('.overflow');
 
 // touch swipes
-overflow.addEventListener('touchstart', handleTouchStart);
-overflow.addEventListener('touchmove', handleTouchMove);
+let interval = setInterval(slideNext, 5000);
 
-overflow.addEventListener('mousedown', handleMouseDown);
 overflow.addEventListener('mousemove', handleMouseMove);
+overflow.addEventListener('touchmove', (event) => {
+    clearInterval(interval);
+    handleTouchMove(event);
+    interval = setInterval(slideNext, 5000);
+});
+overflow.addEventListener('mousedown', (event) => {
+    clearInterval(interval);
+    handleMouseDown(event);
+    interval = setInterval(slideNext, 5000);
+});
+overflow.addEventListener('touchstart', handleTouchStart);
 
 let x1 = null;
 
@@ -53,23 +62,23 @@ function handleMouseMove(event) {
 }
 
 // --------------------------------------
-for(let el of theme) {
+for (let el of theme) {
     el.addEventListener('click', toggler);
 }
 
 
 function toggler() {
 
-/*
-    arrows.style.color = 'white';
-    if (arrows.style.color === 'black') {
+    /*
         arrows.style.color = 'white';
-    }
-    if (arrows.style.color === 'white') {
-        arrows.style.color = 'black';
-    }
-*/
-    for(let el of theme) {
+        if (arrows.style.color === 'black') {
+            arrows.style.color = 'white';
+        }
+        if (arrows.style.color === 'white') {
+            arrows.style.color = 'black';
+        }
+    */
+    for (let el of theme) {
         if (el.style.display === 'none') {
             el.style.display = 'block';
         } else {
@@ -77,7 +86,7 @@ function toggler() {
         }
     }
 
-    for(let el of light) {
+    for (let el of light) {
         el.classList.toggle('dark');
     }
     for (let el of column) {
@@ -110,9 +119,6 @@ function slidePrev() {
         offset = 710;
     }
     sliderLine.style.left = -offset + 'px';
+
+    x1 = null;
 }
-
-(setInterval(slideNext, 5000))
-
-
-
