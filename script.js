@@ -122,3 +122,9 @@ function slidePrev() {
 
     x1 = null;
 }
+
+for (let el of list) {
+    el.addEventListener('click', () => {
+        el.classList.toggle('active');
+    });
+}
