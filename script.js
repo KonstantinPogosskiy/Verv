@@ -125,6 +125,14 @@ function slidePrev() {
 
 for (let el of list) {
     el.addEventListener('click', () => {
-        el.classList.toggle('active');
+        removeClass(list, 'active');
+        el.classList.add('active');
     });
 }
+
+function removeClass (array, className) {
+    array.forEach((item)=> item.classList.remove(className))
+}
+
+
+
