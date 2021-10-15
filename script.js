@@ -8,6 +8,7 @@ let prev = document.querySelector('.slider-prev');
 // let arrows = document.querySelector('.buttonCase');
 let sliderLine = document.querySelector('.slider-line');
 let overflow = document.querySelector('.overflow');
+let continueButton = document.querySelector('.continue');
 
 // touch swipes
 let interval = setInterval(slideNext, 5000);
@@ -122,17 +123,27 @@ function slidePrev() {
 
     x1 = null;
 }
-
+let col = ''
 for (let el of list) {
     el.addEventListener('click', () => {
         removeClass(list, 'active');
         el.classList.add('active');
+        col = el.dataset.list;
     });
 }
+continueButton.addEventListener('click', () => {
+    document.location.href=`https://www.google.com/search?${col}`
+})
 
 function removeClass (array, className) {
     array.forEach((item)=> item.classList.remove(className))
 }
+
+
+
+
+
+
 
 
 
