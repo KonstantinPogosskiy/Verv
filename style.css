@@ -1,5 +1,5 @@
 html {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "SF-Pro-Text", sans-serif;
   user-select: none;
   box-sizing: border-box;
 }
@@ -275,6 +275,13 @@ html body .app ._light {
 }
 html body .app .dark {
   background: black;
+}
+
+@font-face {
+  font-family: "SF-Pro";
+  src: url("fonts/SF-Pro-Text-Bold.ot") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
