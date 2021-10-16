@@ -18,7 +18,7 @@ html body .app .block {
 }
 html body .app .block .container {
   margin: 0 auto;
-  width: 355px;
+  width: 335px;
   height: 100%;
 }
 html body .app .block .container .theme {
@@ -73,7 +73,7 @@ html body .app .block .container .product .column {
   transition: all ease 0.5s;
 }
 html body .app .block .container .product .column .list {
-  width: 108px;
+  width: 105px;
   height: 131px;
   border-radius: 5px;
 }
@@ -145,7 +145,7 @@ html body .app .block .container .product ._2, html body .app .block .container 
 }
 html body .app .block .container .continue {
   font-size: 22px;
-  width: 355px;
+  width: 335px;
   height: 40px;
   color: #FFFFFF;
   background: linear-gradient(225deg, #542285 0%, #222266 100%);
@@ -223,21 +223,21 @@ html body .app ._bitmap .overflow {
 html body .app ._bitmap .overflow .slider {
   position: absolute;
   margin: 0 auto;
-  width: 355px;
+  width: 335px;
   height: 145px;
   z-index: 2;
 }
 html body .app ._bitmap .overflow .slider .slider-line {
   position: relative;
   display: flex;
-  width: 1065px;
+  width: 1005px;
   transition: all ease 1.5s;
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide {
   font-size: 15px;
   margin: 3px;
   height: 140px;
-  width: 355px;
+  width: 335px;
   background: #f3f2f9;
   border-radius: 10px;
   transition: all ease 0.5s;

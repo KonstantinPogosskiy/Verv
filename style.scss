@@ -18,7 +18,7 @@ html {
 
         .container {
           margin: 0 auto;
-          width: 355px;
+          width: 335px;
           height: 100%;
 
           .theme {
@@ -79,7 +79,7 @@ html {
               transition: all ease 0.5s;
 
               .list {
-                width: 108px;
+                width: 105px;
                 height: 131px;
                 border-radius: 5px;
 
@@ -168,7 +168,7 @@ html {
 
           .continue {
             font-size: 22px;
-            width: 355px;
+            width: 335px;
             height: 40px;
             color: #FFFFFF;
             background: linear-gradient(225deg, #542285 0%, #222266 100%);
@@ -258,21 +258,21 @@ html {
           .slider {
             position: absolute;
             margin: 0 auto;
-            width: 355px;
+            width: 335px;
             height: 145px;
             z-index: 2;
 
             .slider-line {
               position: relative;
               display: flex;
-              width: 1065px;
+              width: 1005px;
               transition: all ease 1.5s;
 
               .slide {
                 font-size: 15px;
                 margin: 3px;
                 height: 140px;
-                width: 355px;
+                width: 335px;
                 background: rgba(243, 242, 249, 1);
                 border-radius: 10px;
                 transition: all ease 0.5s;

@@ -107,7 +107,7 @@ prev.addEventListener('click', slidePrev);
 let offset = 0;
 
 function slideNext() {
-    offset += 355;
+    offset += 335;
     if (offset > 710) {
         offset = 0;
     }
@@ -115,7 +115,7 @@ function slideNext() {
 }
 
 function slidePrev() {
-    offset -= 355;
+    offset -= 335;
     if (offset < 0) {
         offset = 710;
     }
