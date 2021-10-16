@@ -36,6 +36,7 @@ html body .app .block .container .theme:hover {
   color: #000000;
 }
 html body .app .block .container h1 {
+  font-family: "SF Pro Display", sans-serif;
   height: 41px;
   font-size: 34px;
   line-height: 41px;
@@ -43,13 +44,12 @@ html body .app .block .container h1 {
   color: #FFFFFF;
   padding-top: 80px;
   margin: 0;
-  letter-spacing: 3px;
+  letter-spacing: 0.37px;
 }
 html body .app .block .container .group {
   color: #FFFFFF;
   left: 7.88%;
   top: 20%;
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 12px;
 }
 html body .app .block .container .paragraph {
@@ -88,12 +88,12 @@ html body .app .block .container .product .column .list ul {
   margin: 0;
 }
 html body .app .block .container .product .column .list ul .num {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 html body .app .block .container .product .column .list ul .month {
-  padding: 0 0 7px 0;
-  font-size: 20px;
+  padding: 0 0 10px 0;
+  font-size: 15px;
   font-weight: bold;
 }
 html body .app .block .container .product .column .list ul .other {
@@ -159,9 +159,10 @@ html body .app .block .container .continue:hover {
   background: linear-gradient(180deg, #542285 90%, #222266 100%);
 }
 html body .app .block .container .billing {
+  font-size: 11px;
   margin: 0;
   padding: 20px 0 25px 0;
-  color: #7d7d80;
+  color: #999999;
   text-align: center;
 }
 html body .app .block .container .billing::after {
@@ -233,6 +234,7 @@ html body .app ._bitmap .overflow .slider .slider-line {
   transition: all ease 1.5s;
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide {
+  font-size: 15px;
   margin: 3px;
   height: 140px;
   width: 355px;
@@ -242,20 +244,23 @@ html body .app ._bitmap .overflow .slider .slider-line .slide {
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide .comment {
   display: flex;
+  height: 45px;
   justify-content: space-between;
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide .comment .slide-title {
-  margin: 20px;
+  height: 18px;
+  margin: 20px 20px 10px 18px;
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide .comment .author {
   margin: 20px;
+  opacity: 0.5;
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide .stars {
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 18px;
   color: #fcbf59;
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide .slide-comment {
-  margin: 10px 20px 10px 20px;
+  margin: 16px 23px 24px 18px;
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide-dark {
   background: linear-gradient(225deg, #262526 0%, #19181A 100%);
@@ -275,13 +280,6 @@ html body .app ._light {
 }
 html body .app .dark {
   background: black;
-}
-
-@font-face {
-  font-family: "SF-Pro";
-  src: url("fonts/SF-Pro-Text-Bold.ot") format("truetype");
-  font-style: normal;
-  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -38,6 +38,7 @@ html {
           }
 
           h1 {
+            font-family: 'SF Pro Display', sans-serif;
             height: 41px;
             font-size: 34px;
             line-height: 41px;
@@ -45,14 +46,13 @@ html {
             color: #FFFFFF;
             padding-top: 80px;
             margin: 0;
-            letter-spacing: 3px;
+            letter-spacing: 0.37px;
           }
 
           .group {
             color: #FFFFFF;
             left: 7.88%;
             top: 20%;
-            font-family: 'Barlow Semi Condensed', sans-serif;
             font-size: 12px;
           }
 
@@ -95,13 +95,13 @@ html {
                   margin: 0;
 
                   .num {
-                    font-size: 20px;
+                    font-size: 24px;
                     font-weight: bold;
                   }
 
                   .month {
-                    padding: 0 0 7px 0;
-                    font-size: 20px;
+                    padding: 0 0 10px 0;
+                    font-size: 15px;
                     font-weight: bold;
                   }
 
@@ -184,9 +184,10 @@ html {
           }
 
           .billing {
+            font-size: 11px;
             margin: 0;
             padding: 20px 0 25px 0;
-            color: rgba(125, 125, 128, 1);
+            color: #999999;
             text-align: center;
 
             &::after {
@@ -268,6 +269,7 @@ html {
               transition: all ease 1.5s;
 
               .slide {
+                font-size: 15px;
                 margin: 3px;
                 height: 140px;
                 width: 355px;
@@ -277,26 +279,28 @@ html {
 
                 .comment {
                   display: flex;
+                  height: 45px;
                   justify-content: space-between;
 
                   .slide-title {
-                    margin: 20px;
+                    height: 18px;
+                    margin: 20px 20px 10px 18px;
                   }
 
                   .author {
                     margin: 20px;
+                    opacity: 0.5;
                   }
                 }
 
                 .stars {
-                  margin: 0 20px 0 20px;
+                  margin: 0 20px 0 18px;
                   color: rgba(252, 191, 89, 1);
                 }
 
                 .slide-comment {
-                  margin: 10px 20px 10px 20px;
+                  margin: 16px 23px 24px 18px;
                 }
-
               }
 
               .slide-dark {
@@ -328,11 +332,4 @@ html {
       }
     }
   }
-}
-
-@font-face {
-  font-family: "SF-Pro";
-  src: url("fonts/SF-Pro-Text-Bold.ot") format("truetype");
-  font-style: normal;
-  font-weight: normal;
 }
