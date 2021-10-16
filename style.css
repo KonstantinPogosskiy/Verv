@@ -102,7 +102,7 @@ html body .app .block .container .product .column .list_dark_theme {
   transition: all ease 0.5s;
 }
 html body .app .block .container .product .column ._two {
-  border-radius: 0;
+  border-radius: 0 0 5px 5px;
 }
 html body .app .block .container .product .column ._three {
   height: 115px;
@@ -238,12 +238,11 @@ html body .app ._bitmap .overflow .slider {
 html body .app ._bitmap .overflow .slider .slider-line {
   position: relative;
   display: flex;
-  width: 1005px;
+  width: 1017px;
   transition: all ease 1.5s;
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide {
   font-size: 15px;
-  margin: 3px;
   height: 140px;
   width: 335px;
   background: #f3f2f9;
@@ -269,6 +268,15 @@ html body .app ._bitmap .overflow .slider .slider-line .slide .stars {
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide .slide-comment {
   margin: 16px 23px 24px 18px;
+}
+html body .app ._bitmap .overflow .slider .slider-line .__one {
+  margin: 0 2.5px 0 0;
+}
+html body .app ._bitmap .overflow .slider .slider-line .__two {
+  margin: 0 2.5px 0 2.5px;
+}
+html body .app ._bitmap .overflow .slider .slider-line .__three {
+  margin: 0 0 0 2.5px;
 }
 html body .app ._bitmap .overflow .slider .slider-line .slide-dark {
   background: linear-gradient(225deg, #262526 0%, #19181A 100%);

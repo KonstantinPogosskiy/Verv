@@ -115,7 +115,7 @@ html {
               }
 
               ._two {
-                border-radius: 0;
+                border-radius: 0 0 5px 5px;
               }
 
               ._three {
@@ -275,12 +275,11 @@ html {
             .slider-line {
               position: relative;
               display: flex;
-              width: 1005px;
+              width: 1017px;
               transition: all ease 1.5s;
 
               .slide {
                 font-size: 15px;
-                margin: 3px;
                 height: 140px;
                 width: 335px;
                 background: rgba(243, 242, 249, 1);
@@ -311,6 +310,18 @@ html {
                 .slide-comment {
                   margin: 16px 23px 24px 18px;
                 }
+              }
+
+              .__one {
+                margin: 0 2.5px 0 0;
+              }
+
+              .__two {
+                margin: 0 2.5px 0 2.5px;
+              }
+
+              .__three {
+                margin: 0 0 0 2.5px;
               }
 
               .slide-dark {
