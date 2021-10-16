@@ -23,10 +23,12 @@ html body .app .block .container {
 }
 html body .app .block .container .theme {
   position: absolute;
+  left: 0;
+  right: 0;
   background: rgba(255, 255, 255, 0.3);
   color: #625f5f;
   border-radius: 50%;
-  margin: 25px 10px 0 320px;
+  margin: 48px 19px 0 330px;
   padding: 5px;
   transition: all ease 0.5s;
 }
