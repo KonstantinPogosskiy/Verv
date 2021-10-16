@@ -71,8 +71,6 @@ html {
             align-items: end;
 
             .column {
-              width: 33.3%;
-              margin: 0 5px 0 5px;
               background: #F3F2F9;
               border-radius: 5px;
               text-align: center;
@@ -116,8 +114,13 @@ html {
                 transition: all ease 0.5s;
               }
 
+              ._two {
+                border-radius: 0;
+              }
+
               ._three {
                 height: 115px;
+                border-radius: 0;
               }
 
               .save {
@@ -159,10 +162,17 @@ html {
 
             ._1 {
               height: 131px;
+              margin: 0 5px 0 0;
             }
 
-            ._2, ._3 {
+            ._2 {
               height: 156px;
+              margin: 0 5px 0 5px;
+            }
+
+            ._3 {
+              height: 156px;
+              margin: 0 0 0 5px;
             }
           }
 
