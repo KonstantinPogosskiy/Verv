@@ -355,7 +355,7 @@ html body .app ._bitmap .overflow .slider .slider-line .slide-dark {
 }
 html body .app ._product {
   height: 249px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
   transition: all ease 0.5s;
 }
 html body .app ._continue {
