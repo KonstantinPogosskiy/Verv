@@ -129,7 +129,7 @@ function slideNext() {
         sliderLine.style.left = -offset + 'px';
     }
     // iPhone XR
-    else if (document.body.clientWidth < '500') {
+    else if (document.body.clientWidth >= '414') {
         offset += 379;
         if (offset > 758) {
             offset = 0;
