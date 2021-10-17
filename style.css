@@ -73,15 +73,29 @@ html body .app .block .container h1 {
 }
 html body .app .block .container .group {
   color: #FFFFFF;
-  left: 7.88%;
-  top: 20%;
   font-size: 12px;
+  padding-top: 0;
 }
 html body .app .block .container .paragraph {
-  margin: 25px 0 0 0;
+  height: 23px;
+  margin: 22px 0 0 0;
 }
 html body .app .block .container .paragraph::before {
-  content: url("img/line/Path 1.svg");
+  content: url("img/iPhone X/Path 1.svg");
+}
+@media screen and (min-width: 376px) {
+  html body .app .block .container .paragraph {
+    height: 30px;
+  }
+  html body .app .block .container .group {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 374px) {
+  html body .app .block .container .paragraph {
+    height: 15px;
+    margin: 8px 0 0 0;
+  }
 }
 html body .app .block .container .product {
   display: flex;
@@ -122,6 +136,14 @@ html body .app .block .container .product .column .list ul .month {
 html body .app .block .container .product .column .list ul .other {
   font-size: 13px;
 }
+html body .app .block .container .product .column .list ul ._month {
+  padding-top: 6px;
+}
+@media screen and (min-width: 376px) {
+  html body .app .block .container .product .column .list ul ._month {
+    padding-top: 8px;
+  }
+}
 @media screen and (max-width: 374px) {
   html body .app .block .container .product .column .list ul .num {
     font-size: 20px;
@@ -132,6 +154,9 @@ html body .app .block .container .product .column .list ul .other {
   }
   html body .app .block .container .product .column .list ul .other {
     font-size: 11px;
+  }
+  html body .app .block .container .product .column .list ul ._month {
+    padding-top: 3px;
   }
 }
 html body .app .block .container .product .column .list_dark_theme {
@@ -328,27 +353,27 @@ html body .app ._bitmap {
 html body .app ._bitmap .graph {
   position: absolute;
   width: 100%;
-  padding-top: 155px;
+  padding-top: 145px;
 }
 html body .app ._bitmap .free {
   position: absolute;
   left: 302px;
-  top: 180px;
+  top: 170px;
 }
 html body .app ._bitmap .pro {
   position: absolute;
   left: 302px;
-  top: 265px;
+  top: 255px;
 }
 html body .app ._bitmap .dot {
   position: absolute;
   left: 315px;
-  top: 205px;
+  top: 195px;
 }
 html body .app ._bitmap .dot_2 {
   position: absolute;
   left: 315px;
-  top: 290px;
+  top: 280px;
 }
 html body .app ._bitmap .girl {
   position: absolute;
@@ -358,19 +383,19 @@ html body .app ._bitmap .girl {
 @media screen and (min-width: 376px) {
   html body .app ._bitmap .free {
     left: 328px;
-    top: 183px;
+    top: 175px;
   }
   html body .app ._bitmap .pro {
     left: 328px;
-    top: 275px;
+    top: 267px;
   }
   html body .app ._bitmap .dot {
     left: 340px;
-    top: 210px;
+    top: 200px;
   }
   html body .app ._bitmap .dot_2 {
     left: 340px;
-    top: 302px;
+    top: 292px;
   }
   html body .app ._bitmap .girl {
     width: 65%;
@@ -380,6 +405,9 @@ html body .app ._bitmap .girl {
   }
 }
 @media screen and (max-width: 374px) {
+  html body .app ._bitmap .graph {
+    padding-top: 80px;
+  }
   html body .app ._bitmap .free {
     left: 250px;
     top: 183px;
@@ -555,7 +583,7 @@ html body .app ._continue {
   }
 }
 html body .app ._light {
-  background: #ffdfb3;
+  background: #FFFFFF;
 }
 html body .app .dark {
   background: black;

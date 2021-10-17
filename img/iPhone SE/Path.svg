@@ -1,0 +1,12 @@
+<svg width="320" height="1" viewBox="0 0 320 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:overlay" opacity="0.764602">
+<path d="M1 0.5H320" stroke="url(#paint0_linear_0:197)" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0:197" x1="1" y1="1.5" x2="320" y2="1.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.01"/>
+<stop offset="0.486888" stop-color="white" stop-opacity="0.690068"/>
+<stop offset="1" stop-color="white" stop-opacity="0.01"/>
+</linearGradient>
+</defs>
+</svg>

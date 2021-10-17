@@ -80,16 +80,32 @@ html {
 
           .group {
             color: #FFFFFF;
-            left: 7.88%;
-            top: 20%;
             font-size: 12px;
+            padding-top: 0;
           }
 
           .paragraph {
-            margin: 25px 0 0 0;
+            height: 23px;
+            margin: 22px 0 0 0;
 
             &::before {
-              content: url("img/line/Path 1.svg");
+              content: url("img/iPhone X/Path 1.svg");
+            }
+          }
+
+          @media screen and (min-width: 376px) {
+            .paragraph {
+              height: 30px;
+            }
+            .group {
+              padding-top: 10px;
+            }
+          }
+
+          @media screen and (max-width: 374px) {
+            .paragraph {
+              height: 15px;
+              margin: 8px 0 0 0;
             }
           }
 
@@ -136,6 +152,15 @@ html {
                     font-size: 13px;
                   }
 
+                  ._month {
+                    padding-top: 6px;
+                  }
+                  @media screen and (min-width: 376px) {
+                    ._month {
+                      padding-top: 8px;
+                    }
+                  }
+
                   @media screen and (max-width: 374px) {
                     .num {
                       font-size: 20px;
@@ -148,6 +173,10 @@ html {
 
                     .other {
                       font-size: 11px;
+                    }
+
+                    ._month {
+                      padding-top: 3px;
                     }
                   }
                 }
@@ -384,31 +413,31 @@ html {
         .graph {
           position: absolute;
           width: 100%;
-          padding-top: 155px;
+          padding-top: 145px;
         }
 
         .free {
           position: absolute;
           left: 302px;
-          top: 180px;
+          top: 170px;
         }
 
         .pro {
           position: absolute;
           left: 302px;
-          top: 265px;
+          top: 255px;
         }
 
         .dot {
           position: absolute;
           left: 315px;
-          top: 205px;
+          top: 195px;
         }
 
         .dot_2 {
           position: absolute;
           left: 315px;
-          top: 290px;
+          top: 280px;
         }
 
         .girl {
@@ -420,22 +449,22 @@ html {
         @media screen and (min-width: 376px) {
           .free {
             left: 328px;
-            top: 183px;
+            top: 175px;
           }
 
           .pro {
             left: 328px;
-            top: 275px;
+            top: 267px;
           }
 
           .dot {
             left: 340px;
-            top: 210px;
+            top: 200px;
           }
 
           .dot_2 {
             left: 340px;
-            top: 302px;
+            top: 292px;
           }
 
           .girl {
@@ -447,6 +476,11 @@ html {
         }
 
         @media screen and (max-width: 374px) {
+
+          .graph {
+            padding-top: 80px;
+          }
+
           .free {
             left: 250px;
             top: 183px;
@@ -659,7 +693,7 @@ html {
       }
 
       ._light {
-        background: #ffdfb3;
+        background: #FFFFFF;
       }
 
       .dark {
