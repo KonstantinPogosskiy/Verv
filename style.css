@@ -269,6 +269,14 @@ html body .app ._bitmap .girl {
   left: 43%;
   top: 25%;
 }
+@media screen and (min-width: 376px) {
+  html body .app ._bitmap .girl {
+    width: 65%;
+    height: 65%;
+    left: 29%;
+    top: 22%;
+  }
+}
 html body .app ._bitmap .overflow {
   position: absolute;
   overflow: hidden;
