@@ -309,6 +309,32 @@ html {
             top: 290px;
           }
 
+          @media screen and (min-width: 376px) {
+            .free {
+              position: absolute;
+              left: 328px;
+              top: 183px;
+            }
+
+            .pro {
+              position: absolute;
+              left: 328px;
+              top: 275px;
+            }
+
+            .dot {
+              position: absolute;
+              left: 340px;
+              top: 210px;
+            }
+
+            .dot_2 {
+              position: absolute;
+              left: 340px;
+              top: 302px;
+            }
+          }
+
           .girl {
             position: absolute;
             left: 43%;
@@ -405,6 +431,15 @@ html {
             .overflow {
               width: 414px;
               top: 400px;
+              .slider {
+                width: 374px;
+                .slider-line {
+                  width: 1134px;
+                  .slide {
+                    width: 374px;
+                  }
+                }
+              }
             }
           }
         }

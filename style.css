@@ -264,6 +264,28 @@ html body .app ._bitmap .dot_2 {
   left: 315px;
   top: 290px;
 }
+@media screen and (min-width: 376px) {
+  html body .app ._bitmap .free {
+    position: absolute;
+    left: 328px;
+    top: 183px;
+  }
+  html body .app ._bitmap .pro {
+    position: absolute;
+    left: 328px;
+    top: 275px;
+  }
+  html body .app ._bitmap .dot {
+    position: absolute;
+    left: 340px;
+    top: 210px;
+  }
+  html body .app ._bitmap .dot_2 {
+    position: absolute;
+    left: 340px;
+    top: 302px;
+  }
+}
 html body .app ._bitmap .girl {
   position: absolute;
   left: 43%;
@@ -346,6 +368,15 @@ html body .app ._bitmap .overflow .slider .slider-line .slide-dark {
   html body .app ._bitmap .overflow {
     width: 414px;
     top: 400px;
+  }
+  html body .app ._bitmap .overflow .slider {
+    width: 374px;
+  }
+  html body .app ._bitmap .overflow .slider .slider-line {
+    width: 1134px;
+  }
+  html body .app ._bitmap .overflow .slider .slider-line .slide {
+    width: 374px;
   }
 }
 @media screen and (min-width: 376px) {

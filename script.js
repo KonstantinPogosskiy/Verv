@@ -107,22 +107,46 @@ prev.addEventListener('click', slidePrev);
 let offset = 0;
 
 function slideNext() {
-    offset += 340;
-    if (offset > 710) {
-        offset = 0;
+    // iPhone X
+    if(document.body.clientWidth <= '375') {
+        offset += 340;
+        if (offset > 710) {
+            offset = 0;
+        }
+        sliderLine.style.left = -offset + 'px';
     }
-    sliderLine.style.left = -offset + 'px';
+    // iPhone XR
+    else if (document.body.clientWidth >= '414') {
+        offset += 379;
+        if (offset > 758) {
+            offset = 0;
+        }
+        sliderLine.style.left = -offset + 'px';
+    }
 }
 
 function slidePrev() {
-    offset -= 340;
-    if (offset < 0) {
-        offset = 710;
+    // iPhone X
+    if(document.body.clientWidth <= '375') {
+        offset -= 340;
+        if (offset < 0) {
+            offset = 710;
+        }
+        sliderLine.style.left = -offset + 'px';
     }
-    sliderLine.style.left = -offset + 'px';
+    // iPhone XR
+    else if (document.body.clientWidth >= '414') {
+        offset -= 379;
+        if (offset < 0) {
+            offset = 758;
+        }
+        sliderLine.style.left = -offset + 'px';
+    }
 
     x1 = null;
 }
+
+
 let col = ''
 for (let el of list) {
     el.addEventListener('click', () => {
