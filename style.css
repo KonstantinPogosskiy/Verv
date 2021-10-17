@@ -358,12 +358,12 @@ html body .app ._bitmap .graph {
 html body .app ._bitmap .free {
   position: absolute;
   left: 302px;
-  top: 170px;
+  top: 168px;
 }
 html body .app ._bitmap .pro {
   position: absolute;
   left: 302px;
-  top: 255px;
+  top: 253px;
 }
 html body .app ._bitmap .dot {
   position: absolute;
@@ -383,11 +383,11 @@ html body .app ._bitmap .girl {
 @media screen and (min-width: 376px) {
   html body .app ._bitmap .free {
     left: 328px;
-    top: 175px;
+    top: 173px;
   }
   html body .app ._bitmap .pro {
     left: 328px;
-    top: 267px;
+    top: 265px;
   }
   html body .app ._bitmap .dot {
     left: 340px;
@@ -407,28 +407,32 @@ html body .app ._bitmap .girl {
 @media screen and (max-width: 374px) {
   html body .app ._bitmap .graph {
     padding-top: 80px;
+    transform: rotateX(40deg);
+  }
+  html body .app ._bitmap ._first {
+    top: 10px;
   }
   html body .app ._bitmap .free {
-    left: 250px;
-    top: 183px;
+    left: 257px;
+    top: 92px;
   }
   html body .app ._bitmap .pro {
-    left: 250px;
-    top: 275px;
+    left: 257px;
+    top: 145px;
   }
   html body .app ._bitmap .dot {
-    left: 280px;
-    top: 210px;
+    left: 270px;
+    top: 118px;
   }
   html body .app ._bitmap .dot_2 {
-    left: 280px;
-    top: 302px;
+    left: 270px;
+    top: 173px;
   }
   html body .app ._bitmap .girl {
-    width: 60%;
-    height: 60%;
-    left: 29%;
-    top: 22%;
+    width: 58%;
+    height: 58%;
+    left: 32%;
+    top: 24%;
   }
 }
 html body .app ._bitmap .overflow {

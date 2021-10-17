@@ -419,13 +419,13 @@ html {
         .free {
           position: absolute;
           left: 302px;
-          top: 170px;
+          top: 168px;
         }
 
         .pro {
           position: absolute;
           left: 302px;
-          top: 255px;
+          top: 253px;
         }
 
         .dot {
@@ -449,12 +449,12 @@ html {
         @media screen and (min-width: 376px) {
           .free {
             left: 328px;
-            top: 175px;
+            top: 173px;
           }
 
           .pro {
             left: 328px;
-            top: 267px;
+            top: 265px;
           }
 
           .dot {
@@ -479,33 +479,40 @@ html {
 
           .graph {
             padding-top: 80px;
+            transform: rotateX(40deg);
+          }
+          ._first {
+            top: 10px;
+          }
+
+          ._second {
           }
 
           .free {
-            left: 250px;
-            top: 183px;
+            left: 257px;
+            top: 92px;
           }
 
           .pro {
-            left: 250px;
-            top: 275px;
+            left: 257px;
+            top: 145px;
           }
 
           .dot {
-            left: 280px;
-            top: 210px;
+            left: 270px;
+            top: 118px;
           }
 
           .dot_2 {
-            left: 280px;
-            top: 302px;
+            left: 270px;
+            top: 173px;
           }
 
           .girl {
-            width: 60%;
-            height: 60%;
-            left: 29%;
-            top: 22%;
+            width: 58%;
+            height: 58%;
+            left: 32%;
+            top: 24%;
           }
         }
 
