@@ -19,11 +19,13 @@ overflow.addEventListener('touchmove', (event) => {
     handleTouchMove(event);
     interval = setInterval(slideNext, 5000);
 });
+
 overflow.addEventListener('mousedown', (event) => {
     clearInterval(interval);
     handleMouseDown(event);
     interval = setInterval(slideNext, 5000);
 });
+
 overflow.addEventListener('touchstart', handleTouchStart);
 
 let x1 = null;
@@ -68,7 +70,7 @@ for (let el of theme) {
 }
 
 
-function toggler() {
+function toggler () {
 
     /*
         arrows.style.color = 'white';
@@ -90,12 +92,15 @@ function toggler() {
     for (let el of light) {
         el.classList.toggle('dark');
     }
+
     for (let el of column) {
         el.classList.toggle('dark_theme');
     }
+
     for (let el of list) {
         el.classList.toggle('list_dark_theme');
     }
+
     for (let el of slide) {
         el.classList.toggle('slide-dark');
     }
@@ -148,21 +153,23 @@ function slidePrev() {
 
 
 let col = ''
+
 for (let el of list) {
     el.addEventListener('click', () => {
         removeClass(list, 'active');
         el.classList.add('active');
         col = el.dataset.list;
     });
-}
-continueButton.addEventListener('click', () => {
-    document.location.href=`https://www.google.com/search?${col}`
-})
 
-function removeClass (array, className) {
-    array.forEach((item)=> item.classList.remove(className))
-}
 
+    continueButton.addEventListener('click', () => {
+        document.location.href = `https://www.google.com/search?${col}`
+    })
+
+    function removeClass(array, className) {
+        array.forEach((item) => item.classList.remove(className))
+    }
+}
 
 
 

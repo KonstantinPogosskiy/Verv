@@ -33,11 +33,13 @@ html {
             margin: 48px 19px 0 330px;
             padding: 5px;
             transition: all ease 0.5s;
+
             i {
               display: block;
               margin: auto;
               text-align: center;
             }
+
             &:hover {
               cursor: pointer;
               background: rgba(226, 199, 199, 0.3);
@@ -51,6 +53,12 @@ html {
             }
           }
 
+          @media screen and (max-width: 374px) {
+            .theme {
+              margin: 29px 10px 0 278px;
+            }
+          }
+
           h1 {
             font-family: 'SF Pro Display', sans-serif;
             height: 41px;
@@ -61,6 +69,13 @@ html {
             padding-top: 80px;
             margin: 0;
             letter-spacing: 0.37px;
+          }
+
+          @media screen and (max-width: 374px) {
+            h1 {
+              font-size: 24px;
+              padding-top: 40px;
+            }
           }
 
           .group {
@@ -120,6 +135,21 @@ html {
                   .other {
                     font-size: 13px;
                   }
+
+                  @media screen and (max-width: 374px) {
+                    .num {
+                      font-size: 20px;
+                    }
+
+                    .month {
+                      padding: 0 0 5px 0;
+                      font-size: 13px;
+                    }
+
+                    .other {
+                      font-size: 11px;
+                    }
+                  }
                 }
               }
 
@@ -135,16 +165,6 @@ html {
               ._three {
                 height: 115px;
                 border-radius: 0;
-              }
-
-              @media screen and (min-width: 376px) {
-                .list {
-                  width: 118px;
-                  height: 151px;
-                }
-                ._three {
-                  height: 135px;
-                }
               }
 
               .save {
@@ -177,6 +197,40 @@ html {
               .active {
                 background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
                 color: #FFFFFF;
+              }
+
+              @media screen and (min-width: 376px) {
+                .list {
+                  width: 118px;
+                  height: 151px;
+                }
+                ._three {
+                  height: 135px;
+                }
+              }
+
+              @media screen and (max-width: 374px) {
+                .list {
+                  width: 88px;
+                  height: 112px;
+                }
+                ._three {
+                  height: 97px;
+                }
+                .save {
+                  height: 21px;
+                  font-size: 11px;
+                  p {
+                    padding: 4px;
+                  }
+                }
+                .sale {
+                  font-size: 7px;
+                  height: 15px;
+                  p {
+                    padding: 4px;
+                  }
+                }
               }
             }
 
@@ -213,11 +267,34 @@ html {
                 height: 176px;
               }
             }
+
+            @media screen and (max-width: 374px) {
+              ._1 {
+                height: 112px;
+                margin: 0 4px 0 0;
+              }
+
+              ._2 {
+                height: 132px;
+                margin: 0 4px 0 4px;
+              }
+
+              ._3 {
+                height: 132px;
+                margin: 0 0 0 4px;
+              }
+            }
           }
 
           @media screen and (min-width: 376px) {
             .product {
               padding: 97px 0 0 0;
+            }
+          }
+
+          @media screen and (max-width: 374px) {
+            .product {
+              padding: 62px 0 0 0;
             }
           }
 
@@ -244,6 +321,12 @@ html {
             }
           }
 
+          @media screen and (max-width: 374px) {
+            .continue {
+              width: 280px;
+            }
+          }
+
           .billing {
             font-size: 11px;
             margin: 0;
@@ -263,6 +346,15 @@ html {
               margin: 26px 0 9px 0;
             }
           }
+          @media screen and (max-width: 374px) {
+            .billing {
+              padding: 17px 0 18px 0;
+
+              &::after {
+                display: none;
+              }
+            }
+          }
         }
       }
 
@@ -276,204 +368,304 @@ html {
         }
       }
 
-        ._bitmap {
-          background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+      @media screen and (max-width: 374px) {
+        .block {
+          width: 320px;
 
-          .graph {
-            position: absolute;
-            width: 100%;
-            padding-top: 155px;
+          .container {
+            width: 280px;
           }
+        }
+      }
 
+      ._bitmap {
+        background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+
+        .graph {
+          position: absolute;
+          width: 100%;
+          padding-top: 155px;
+        }
+
+        .free {
+          position: absolute;
+          left: 302px;
+          top: 180px;
+        }
+
+        .pro {
+          position: absolute;
+          left: 302px;
+          top: 265px;
+        }
+
+        .dot {
+          position: absolute;
+          left: 315px;
+          top: 205px;
+        }
+
+        .dot_2 {
+          position: absolute;
+          left: 315px;
+          top: 290px;
+        }
+
+        .girl {
+          position: absolute;
+          left: 43%;
+          top: 25%;
+        }
+
+        @media screen and (min-width: 376px) {
           .free {
-            position: absolute;
-            left: 302px;
-            top: 180px;
+            left: 328px;
+            top: 183px;
           }
 
           .pro {
-            position: absolute;
-            left: 302px;
-            top: 265px;
+            left: 328px;
+            top: 275px;
           }
 
           .dot {
-            position: absolute;
-            left: 315px;
-            top: 205px;
+            left: 340px;
+            top: 210px;
           }
 
           .dot_2 {
-            position: absolute;
-            left: 315px;
-            top: 290px;
-          }
-
-          @media screen and (min-width: 376px) {
-            .free {
-              position: absolute;
-              left: 328px;
-              top: 183px;
-            }
-
-            .pro {
-              position: absolute;
-              left: 328px;
-              top: 275px;
-            }
-
-            .dot {
-              position: absolute;
-              left: 340px;
-              top: 210px;
-            }
-
-            .dot_2 {
-              position: absolute;
-              left: 340px;
-              top: 302px;
-            }
+            left: 340px;
+            top: 302px;
           }
 
           .girl {
-            position: absolute;
-            left: 43%;
-            top: 25%;
+            width: 65%;
+            height: 65%;
+            left: 29%;
+            top: 22%;
+          }
+        }
+
+        @media screen and (max-width: 374px) {
+          .free {
+            left: 250px;
+            top: 183px;
           }
 
-          @media screen and (min-width: 376px) {
-            .girl {
-              width: 65%;
-              height: 65%;
-              left: 29%;
-              top: 22%;
+          .pro {
+            left: 250px;
+            top: 275px;
+          }
+
+          .dot {
+            left: 280px;
+            top: 210px;
+          }
+
+          .dot_2 {
+            left: 280px;
+            top: 302px;
+          }
+
+          .girl {
+            width: 60%;
+            height: 60%;
+            left: 29%;
+            top: 22%;
+          }
+        }
+
+        .overflow {
+          position: absolute;
+          overflow: hidden;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          width: 375px;
+          height: 145px;
+          top: 350px;
+          margin: auto;
+
+          .slider {
+            position: absolute;
+            margin: 0 auto;
+            width: 335px;
+            height: 145px;
+            z-index: 2;
+
+            .slider-line {
+              position: relative;
+              display: flex;
+              width: 1017px;
+              transition: all ease 1.5s;
+
+              .slide {
+                font-size: 15px;
+                height: 140px;
+                width: 335px;
+                background: rgba(243, 242, 249, 1);
+                border-radius: 10px;
+                transition: all ease 0.5s;
+
+                .comment {
+                  display: flex;
+                  height: 45px;
+                  justify-content: space-between;
+
+                  .slide-title {
+                    height: 18px;
+                    margin: 20px 20px 10px 18px;
+                  }
+
+                  .author {
+                    margin: 20px;
+                    opacity: 0.5;
+                  }
+                }
+
+                .stars {
+                  margin: 0 20px 0 18px;
+                  color: rgba(252, 191, 89, 1);
+                }
+
+                .slide-comment {
+                  margin: 16px 23px 24px 18px;
+                }
+              }
+
+              .__one {
+                margin: 0 2.5px 0 0;
+              }
+
+              .__two {
+                margin: 0 2.5px 0 2.5px;
+              }
+
+              .__three {
+                margin: 0 0 0 2.5px;
+              }
+
+              .slide-dark {
+                background: linear-gradient(225deg, #262526 0%, #19181A 100%);
+                color: #fff;
+              }
             }
           }
+        }
 
+        @media screen and (min-width: 376px) {
           .overflow {
-            position: absolute;
-            overflow: hidden;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            width: 375px;
-            height: 145px;
-            top: 350px;
-            margin: auto;
+            width: 414px;
+            top: 400px;
 
             .slider {
-              position: absolute;
-              margin: 0 auto;
-              width: 335px;
-              height: 145px;
-              z-index: 2;
+              width: 374px;
 
               .slider-line {
-                position: relative;
-                display: flex;
-                width: 1017px;
-                transition: all ease 1.5s;
+                width: 1134px;
 
                 .slide {
-                  font-size: 15px;
-                  height: 140px;
-                  width: 335px;
-                  background: rgba(243, 242, 249, 1);
-                  border-radius: 10px;
-                  transition: all ease 0.5s;
+                  width: 374px;
+                }
+              }
+            }
+          }
+        }
 
-                  .comment {
-                    display: flex;
-                    height: 45px;
-                    justify-content: space-between;
+        @media screen and (max-width: 374px) {
+          .overflow {
+            width: 320px;
+            height: 110px;
+            top: 205px;
 
-                    .slide-title {
-                      height: 18px;
-                      margin: 20px 20px 10px 18px;
-                    }
+            .slider {
+              width: 280px;
+              height: 110px;
 
-                    .author {
-                      margin: 20px;
-                      opacity: 0.5;
-                    }
+              .slider-line {
+                width: 852px;
+
+                .slide {
+                  width: 280px;
+                  height: 110px;
+                  font-size: 13px;
+
+                  .slide-comment {
+                    margin: 9px 15px 12px 15px;
                   }
 
                   .stars {
-                    margin: 0 20px 0 18px;
+                    margin: 0 15px 0 15px;
                     color: rgba(252, 191, 89, 1);
                   }
 
-                  .slide-comment {
-                    margin: 16px 23px 24px 18px;
-                  }
-                }
+                  .comment {
+                    height: 38px;
+                    .slide-title {
+                      height: 18px;
+                      margin: 15px 15px 7px 15px;
+                    }
 
-                .__one {
-                  margin: 0 2.5px 0 0;
-                }
-
-                .__two {
-                  margin: 0 2.5px 0 2.5px;
-                }
-
-                .__three {
-                  margin: 0 0 0 2.5px;
-                }
-
-                .slide-dark {
-                  background: linear-gradient(225deg, #262526 0%, #19181A 100%);
-                  color: #fff;
-                }
-              }
-            }
-          }
-          @media screen and (min-width: 376px) {
-            .overflow {
-              width: 414px;
-              top: 400px;
-              .slider {
-                width: 374px;
-                .slider-line {
-                  width: 1134px;
-                  .slide {
-                    width: 374px;
+                    .author {
+                      margin: 15px 25px 20px 20px;
+                      opacity: 0.5;
+                    }
                   }
                 }
               }
             }
           }
         }
-        @media screen and (min-width: 376px) {
+      }
+
+      @media screen and (min-width: 376px) {
         ._bitmap {
           height: 470px;
-          }
         }
+      }
 
+      @media screen and (max-width: 374px) {
+        ._bitmap {
+          height: 261px;
+        }
+      }
+
+      ._product {
+        height: 249px;
+        padding-bottom: 20px;
+        transition: all ease 0.5s;
+      }
+
+      ._continue {
+        height: 124px;
+        transition: all ease 0.5s;
+      }
+
+      @media screen and (min-width: 376px) {
         ._product {
-          height: 249px;
-          padding-bottom: 20px;
-          transition: all ease 0.5s;
+          height: 273px;
+          padding-bottom: 29px;
         }
+      }
 
+      @media screen and (max-width: 374px) {
+        ._product {
+          height: 194px;
+          padding-bottom: 13px;
+        }
         ._continue {
-          height: 124px;
-          transition: all ease 0.5s;
+          height: 100px;
         }
-        @media screen and (min-width: 376px) {
-          ._product {
-            height: 273px;
-            padding-bottom: 29px;
-          }
-        }
+      }
 
-        ._light {
-          background: #ffdfb3;
-        }
+      ._light {
+        background: #ffdfb3;
+      }
 
-        .dark {
-          background: black;
-        }
+      .dark {
+        background: black;
       }
     }
   }
+}
 

@@ -49,6 +49,11 @@ html body .app .block .container .theme:hover {
     margin: 48px 13px 0 370px;
   }
 }
+@media screen and (max-width: 374px) {
+  html body .app .block .container .theme {
+    margin: 29px 10px 0 278px;
+  }
+}
 html body .app .block .container h1 {
   font-family: "SF Pro Display", sans-serif;
   height: 41px;
@@ -59,6 +64,12 @@ html body .app .block .container h1 {
   padding-top: 80px;
   margin: 0;
   letter-spacing: 0.37px;
+}
+@media screen and (max-width: 374px) {
+  html body .app .block .container h1 {
+    font-size: 24px;
+    padding-top: 40px;
+  }
 }
 html body .app .block .container .group {
   color: #FFFFFF;
@@ -111,6 +122,18 @@ html body .app .block .container .product .column .list ul .month {
 html body .app .block .container .product .column .list ul .other {
   font-size: 13px;
 }
+@media screen and (max-width: 374px) {
+  html body .app .block .container .product .column .list ul .num {
+    font-size: 20px;
+  }
+  html body .app .block .container .product .column .list ul .month {
+    padding: 0 0 5px 0;
+    font-size: 13px;
+  }
+  html body .app .block .container .product .column .list ul .other {
+    font-size: 11px;
+  }
+}
 html body .app .block .container .product .column .list_dark_theme {
   color: #FFFFFF;
   transition: all ease 0.5s;
@@ -121,15 +144,6 @@ html body .app .block .container .product .column ._two {
 html body .app .block .container .product .column ._three {
   height: 115px;
   border-radius: 0;
-}
-@media screen and (min-width: 376px) {
-  html body .app .block .container .product .column .list {
-    width: 118px;
-    height: 151px;
-  }
-  html body .app .block .container .product .column ._three {
-    height: 135px;
-  }
 }
 html body .app .block .container .product .column .save {
   background: #fcbf59;
@@ -158,6 +172,38 @@ html body .app .block .container .product .column .active {
   background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
   color: #FFFFFF;
 }
+@media screen and (min-width: 376px) {
+  html body .app .block .container .product .column .list {
+    width: 118px;
+    height: 151px;
+  }
+  html body .app .block .container .product .column ._three {
+    height: 135px;
+  }
+}
+@media screen and (max-width: 374px) {
+  html body .app .block .container .product .column .list {
+    width: 88px;
+    height: 112px;
+  }
+  html body .app .block .container .product .column ._three {
+    height: 97px;
+  }
+  html body .app .block .container .product .column .save {
+    height: 21px;
+    font-size: 11px;
+  }
+  html body .app .block .container .product .column .save p {
+    padding: 4px;
+  }
+  html body .app .block .container .product .column .sale {
+    font-size: 7px;
+    height: 15px;
+  }
+  html body .app .block .container .product .column .sale p {
+    padding: 4px;
+  }
+}
 html body .app .block .container .product .dark_theme {
   background: #373640;
   transition: all ease 0.5s;
@@ -185,9 +231,28 @@ html body .app .block .container .product ._3 {
     height: 176px;
   }
 }
+@media screen and (max-width: 374px) {
+  html body .app .block .container .product ._1 {
+    height: 112px;
+    margin: 0 4px 0 0;
+  }
+  html body .app .block .container .product ._2 {
+    height: 132px;
+    margin: 0 4px 0 4px;
+  }
+  html body .app .block .container .product ._3 {
+    height: 132px;
+    margin: 0 0 0 4px;
+  }
+}
 @media screen and (min-width: 376px) {
   html body .app .block .container .product {
     padding: 97px 0 0 0;
+  }
+}
+@media screen and (max-width: 374px) {
+  html body .app .block .container .product {
+    padding: 62px 0 0 0;
   }
 }
 html body .app .block .container .continue {
@@ -210,6 +275,11 @@ html body .app .block .container .continue:hover {
     width: 374px;
   }
 }
+@media screen and (max-width: 374px) {
+  html body .app .block .container .continue {
+    width: 280px;
+  }
+}
 html body .app .block .container .billing {
   font-size: 11px;
   margin: 0;
@@ -228,12 +298,28 @@ html body .app .block .container .billing::after {
   left: calc(50% - 67px);
   margin: 26px 0 9px 0;
 }
+@media screen and (max-width: 374px) {
+  html body .app .block .container .billing {
+    padding: 17px 0 18px 0;
+  }
+  html body .app .block .container .billing::after {
+    display: none;
+  }
+}
 @media screen and (min-width: 376px) {
   html body .app .block {
     width: 414px;
   }
   html body .app .block .container {
     width: 374px;
+  }
+}
+@media screen and (max-width: 374px) {
+  html body .app .block {
+    width: 320px;
+  }
+  html body .app .block .container {
+    width: 280px;
   }
 }
 html body .app ._bitmap {
@@ -264,37 +350,55 @@ html body .app ._bitmap .dot_2 {
   left: 315px;
   top: 290px;
 }
-@media screen and (min-width: 376px) {
-  html body .app ._bitmap .free {
-    position: absolute;
-    left: 328px;
-    top: 183px;
-  }
-  html body .app ._bitmap .pro {
-    position: absolute;
-    left: 328px;
-    top: 275px;
-  }
-  html body .app ._bitmap .dot {
-    position: absolute;
-    left: 340px;
-    top: 210px;
-  }
-  html body .app ._bitmap .dot_2 {
-    position: absolute;
-    left: 340px;
-    top: 302px;
-  }
-}
 html body .app ._bitmap .girl {
   position: absolute;
   left: 43%;
   top: 25%;
 }
 @media screen and (min-width: 376px) {
+  html body .app ._bitmap .free {
+    left: 328px;
+    top: 183px;
+  }
+  html body .app ._bitmap .pro {
+    left: 328px;
+    top: 275px;
+  }
+  html body .app ._bitmap .dot {
+    left: 340px;
+    top: 210px;
+  }
+  html body .app ._bitmap .dot_2 {
+    left: 340px;
+    top: 302px;
+  }
   html body .app ._bitmap .girl {
     width: 65%;
     height: 65%;
+    left: 29%;
+    top: 22%;
+  }
+}
+@media screen and (max-width: 374px) {
+  html body .app ._bitmap .free {
+    left: 250px;
+    top: 183px;
+  }
+  html body .app ._bitmap .pro {
+    left: 250px;
+    top: 275px;
+  }
+  html body .app ._bitmap .dot {
+    left: 280px;
+    top: 210px;
+  }
+  html body .app ._bitmap .dot_2 {
+    left: 280px;
+    top: 302px;
+  }
+  html body .app ._bitmap .girl {
+    width: 60%;
+    height: 60%;
     left: 29%;
     top: 22%;
   }
@@ -379,9 +483,51 @@ html body .app ._bitmap .overflow .slider .slider-line .slide-dark {
     width: 374px;
   }
 }
+@media screen and (max-width: 374px) {
+  html body .app ._bitmap .overflow {
+    width: 320px;
+    height: 110px;
+    top: 205px;
+  }
+  html body .app ._bitmap .overflow .slider {
+    width: 280px;
+    height: 110px;
+  }
+  html body .app ._bitmap .overflow .slider .slider-line {
+    width: 852px;
+  }
+  html body .app ._bitmap .overflow .slider .slider-line .slide {
+    width: 280px;
+    height: 110px;
+    font-size: 13px;
+  }
+  html body .app ._bitmap .overflow .slider .slider-line .slide .slide-comment {
+    margin: 9px 15px 12px 15px;
+  }
+  html body .app ._bitmap .overflow .slider .slider-line .slide .stars {
+    margin: 0 15px 0 15px;
+    color: #fcbf59;
+  }
+  html body .app ._bitmap .overflow .slider .slider-line .slide .comment {
+    height: 38px;
+  }
+  html body .app ._bitmap .overflow .slider .slider-line .slide .comment .slide-title {
+    height: 18px;
+    margin: 15px 15px 7px 15px;
+  }
+  html body .app ._bitmap .overflow .slider .slider-line .slide .comment .author {
+    margin: 15px 25px 20px 20px;
+    opacity: 0.5;
+  }
+}
 @media screen and (min-width: 376px) {
   html body .app ._bitmap {
     height: 470px;
+  }
+}
+@media screen and (max-width: 374px) {
+  html body .app ._bitmap {
+    height: 261px;
   }
 }
 html body .app ._product {
@@ -397,6 +543,15 @@ html body .app ._continue {
   html body .app ._product {
     height: 273px;
     padding-bottom: 29px;
+  }
+}
+@media screen and (max-width: 374px) {
+  html body .app ._product {
+    height: 194px;
+    padding-bottom: 13px;
+  }
+  html body .app ._continue {
+    height: 100px;
   }
 }
 html body .app ._light {
