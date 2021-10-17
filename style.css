@@ -23,6 +23,8 @@ html body .app .block .container {
 }
 html body .app .block .container .theme {
   position: absolute;
+  width: 18px;
+  height: 18px;
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.3);
@@ -32,10 +34,20 @@ html body .app .block .container .theme {
   padding: 5px;
   transition: all ease 0.5s;
 }
+html body .app .block .container .theme i {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
 html body .app .block .container .theme:hover {
   cursor: pointer;
   background: rgba(226, 199, 199, 0.3);
   color: #000000;
+}
+@media screen and (min-width: 376px) {
+  html body .app .block .container .theme {
+    margin: 48px 13px 0 370px;
+  }
 }
 html body .app .block .container h1 {
   font-family: "SF Pro Display", sans-serif;
@@ -110,6 +122,15 @@ html body .app .block .container .product .column ._three {
   height: 115px;
   border-radius: 0;
 }
+@media screen and (min-width: 376px) {
+  html body .app .block .container .product .column .list {
+    width: 118px;
+    height: 151px;
+  }
+  html body .app .block .container .product .column ._three {
+    height: 135px;
+  }
+}
 html body .app .block .container .product .column .save {
   background: #fcbf59;
   border-radius: 5px 5px 0 0;
@@ -153,6 +174,22 @@ html body .app .block .container .product ._3 {
   height: 156px;
   margin: 0 0 0 5px;
 }
+@media screen and (min-width: 376px) {
+  html body .app .block .container .product ._1 {
+    height: 151px;
+  }
+  html body .app .block .container .product ._2 {
+    height: 176px;
+  }
+  html body .app .block .container .product ._3 {
+    height: 176px;
+  }
+}
+@media screen and (min-width: 376px) {
+  html body .app .block .container .product {
+    padding: 97px 0 0 0;
+  }
+}
 html body .app .block .container .continue {
   font-size: 22px;
   width: 335px;
@@ -167,6 +204,11 @@ html body .app .block .container .continue {
 html body .app .block .container .continue:hover {
   cursor: pointer;
   background: linear-gradient(180deg, #542285 90%, #222266 100%);
+}
+@media screen and (min-width: 376px) {
+  html body .app .block .container .continue {
+    width: 374px;
+  }
 }
 html body .app .block .container .billing {
   font-size: 11px;
@@ -185,6 +227,14 @@ html body .app .block .container .billing::after {
   border-radius: 100px;
   left: calc(50% - 67px);
   margin: 26px 0 9px 0;
+}
+@media screen and (min-width: 376px) {
+  html body .app .block {
+    width: 414px;
+  }
+  html body .app .block .container {
+    width: 374px;
+  }
 }
 html body .app ._bitmap {
   background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
@@ -226,7 +276,7 @@ html body .app ._bitmap .overflow {
   display: flex;
   justify-content: center;
   width: 375px;
-  height: 170px;
+  height: 145px;
   top: 350px;
   margin: auto;
 }
@@ -284,14 +334,31 @@ html body .app ._bitmap .overflow .slider .slider-line .slide-dark {
   background: linear-gradient(225deg, #262526 0%, #19181A 100%);
   color: #fff;
 }
+@media screen and (min-width: 376px) {
+  html body .app ._bitmap .overflow {
+    width: 414px;
+    top: 400px;
+  }
+}
+@media screen and (min-width: 376px) {
+  html body .app ._bitmap {
+    height: 470px;
+  }
+}
 html body .app ._product {
   height: 249px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   transition: all ease 0.5s;
 }
 html body .app ._continue {
   height: 124px;
   transition: all ease 0.5s;
+}
+@media screen and (min-width: 376px) {
+  html body .app ._product {
+    height: 273px;
+    padding-bottom: 29px;
+  }
 }
 html body .app ._light {
   background: #ffdfb3;

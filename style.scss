@@ -23,6 +23,8 @@ html {
 
           .theme {
             position: absolute;
+            width: 18px;
+            height: 18px;
             left: 0;
             right: 0;
             background: rgba(255, 255, 255, 0.3);
@@ -31,11 +33,21 @@ html {
             margin: 48px 19px 0 330px;
             padding: 5px;
             transition: all ease 0.5s;
-
+            i {
+              display: block;
+              margin: auto;
+              text-align: center;
+            }
             &:hover {
               cursor: pointer;
               background: rgba(226, 199, 199, 0.3);
               color: #000000;
+            }
+          }
+
+          @media screen and (min-width: 376px) {
+            .theme {
+              margin: 48px 13px 0 370px;
             }
           }
 
@@ -125,6 +137,16 @@ html {
                 border-radius: 0;
               }
 
+              @media screen and (min-width: 376px) {
+                .list {
+                  width: 118px;
+                  height: 151px;
+                }
+                ._three {
+                  height: 135px;
+                }
+              }
+
               .save {
                 background: rgba(252, 191, 89, 1);
                 border-radius: 5px 5px 0 0;
@@ -151,6 +173,7 @@ html {
                   padding: 3px;
                 }
               }
+
               .active {
                 background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
                 color: #FFFFFF;
@@ -176,6 +199,26 @@ html {
               height: 156px;
               margin: 0 0 0 5px;
             }
+
+            @media screen and (min-width: 376px) {
+              ._1 {
+                height: 151px;
+              }
+
+              ._2 {
+                height: 176px;
+              }
+
+              ._3 {
+                height: 176px;
+              }
+            }
+          }
+
+          @media screen and (min-width: 376px) {
+            .product {
+              padding: 97px 0 0 0;
+            }
           }
 
           .continue {
@@ -192,6 +235,12 @@ html {
             &:hover {
               cursor: pointer;
               background: linear-gradient(180deg, #542285 90%, #222266 100%);
+            }
+          }
+
+          @media screen and (min-width: 376px) {
+            .continue {
+              width: 374px;
             }
           }
 
@@ -217,142 +266,170 @@ html {
         }
       }
 
-      ._bitmap {
-        background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+      @media screen and (min-width: 376px) {
+        .block {
+          width: 414px;
 
-        .graph {
-          position: absolute;
-          width: 100%;
-          padding-top: 155px;
-        }
-
-        .free {
-          position: absolute;
-          left: 302px;
-          top: 180px;
-        }
-
-        .pro {
-          position: absolute;
-          left: 302px;
-          top: 265px;
-        }
-
-        .dot {
-          position: absolute;
-          left: 315px;
-          top: 205px;
-        }
-
-        .dot_2 {
-          position: absolute;
-          left: 315px;
-          top: 290px;
-        }
-
-        .girl {
-          position: absolute;
-          left: 43%;
-          top: 25%;
-        }
-
-        .overflow {
-          position: absolute;
-          overflow: hidden;
-          cursor: pointer;
-          display: flex;
-          justify-content: center;
-          width: 375px;
-          height: 170px;
-          top: 350px;
-          margin: auto;
-
-          .slider {
-            position: absolute;
-            margin: 0 auto;
-            width: 335px;
-            height: 145px;
-            z-index: 2;
-
-            .slider-line {
-              position: relative;
-              display: flex;
-              width: 1017px;
-              transition: all ease 1.5s;
-
-              .slide {
-                font-size: 15px;
-                height: 140px;
-                width: 335px;
-                background: rgba(243, 242, 249, 1);
-                border-radius: 10px;
-                transition: all ease 0.5s;
-
-                .comment {
-                  display: flex;
-                  height: 45px;
-                  justify-content: space-between;
-
-                  .slide-title {
-                    height: 18px;
-                    margin: 20px 20px 10px 18px;
-                  }
-
-                  .author {
-                    margin: 20px;
-                    opacity: 0.5;
-                  }
-                }
-
-                .stars {
-                  margin: 0 20px 0 18px;
-                  color: rgba(252, 191, 89, 1);
-                }
-
-                .slide-comment {
-                  margin: 16px 23px 24px 18px;
-                }
-              }
-
-              .__one {
-                margin: 0 2.5px 0 0;
-              }
-
-              .__two {
-                margin: 0 2.5px 0 2.5px;
-              }
-
-              .__three {
-                margin: 0 0 0 2.5px;
-              }
-
-              .slide-dark {
-                background: linear-gradient(225deg, #262526 0%, #19181A 100%);
-                color: #fff;
-              }
-            }
+          .container {
+            width: 374px;
           }
         }
       }
 
-      ._product {
-        height: 249px;
-        padding-bottom: 20px;
-        transition: all ease 0.5s;
-      }
+        ._bitmap {
+          background: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
 
-      ._continue {
-        height: 124px;
-        transition: all ease 0.5s;
-      }
+          .graph {
+            position: absolute;
+            width: 100%;
+            padding-top: 155px;
+          }
 
-      ._light {
-        background: #ffdfb3;
-      }
+          .free {
+            position: absolute;
+            left: 302px;
+            top: 180px;
+          }
 
-      .dark {
-        background: black;
+          .pro {
+            position: absolute;
+            left: 302px;
+            top: 265px;
+          }
+
+          .dot {
+            position: absolute;
+            left: 315px;
+            top: 205px;
+          }
+
+          .dot_2 {
+            position: absolute;
+            left: 315px;
+            top: 290px;
+          }
+
+          .girl {
+            position: absolute;
+            left: 43%;
+            top: 25%;
+          }
+
+          .overflow {
+            position: absolute;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            width: 375px;
+            height: 145px;
+            top: 350px;
+            margin: auto;
+
+            .slider {
+              position: absolute;
+              margin: 0 auto;
+              width: 335px;
+              height: 145px;
+              z-index: 2;
+
+              .slider-line {
+                position: relative;
+                display: flex;
+                width: 1017px;
+                transition: all ease 1.5s;
+
+                .slide {
+                  font-size: 15px;
+                  height: 140px;
+                  width: 335px;
+                  background: rgba(243, 242, 249, 1);
+                  border-radius: 10px;
+                  transition: all ease 0.5s;
+
+                  .comment {
+                    display: flex;
+                    height: 45px;
+                    justify-content: space-between;
+
+                    .slide-title {
+                      height: 18px;
+                      margin: 20px 20px 10px 18px;
+                    }
+
+                    .author {
+                      margin: 20px;
+                      opacity: 0.5;
+                    }
+                  }
+
+                  .stars {
+                    margin: 0 20px 0 18px;
+                    color: rgba(252, 191, 89, 1);
+                  }
+
+                  .slide-comment {
+                    margin: 16px 23px 24px 18px;
+                  }
+                }
+
+                .__one {
+                  margin: 0 2.5px 0 0;
+                }
+
+                .__two {
+                  margin: 0 2.5px 0 2.5px;
+                }
+
+                .__three {
+                  margin: 0 0 0 2.5px;
+                }
+
+                .slide-dark {
+                  background: linear-gradient(225deg, #262526 0%, #19181A 100%);
+                  color: #fff;
+                }
+              }
+            }
+          }
+          @media screen and (min-width: 376px) {
+            .overflow {
+              width: 414px;
+              top: 400px;
+            }
+          }
+        }
+        @media screen and (min-width: 376px) {
+        ._bitmap {
+          height: 470px;
+          }
+        }
+
+        ._product {
+          height: 249px;
+          padding-bottom: 21px;
+          transition: all ease 0.5s;
+        }
+
+        ._continue {
+          height: 124px;
+          transition: all ease 0.5s;
+        }
+        @media screen and (min-width: 376px) {
+          ._product {
+            height: 273px;
+            padding-bottom: 29px;
+          }
+        }
+
+        ._light {
+          background: #ffdfb3;
+        }
+
+        .dark {
+          background: black;
+        }
       }
     }
   }
-}
+
