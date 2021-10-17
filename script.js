@@ -112,16 +112,24 @@ prev.addEventListener('click', slidePrev);
 let offset = 0;
 
 function slideNext() {
+    // iPhone SE
+    if (document.body.clientWidth < '375') {
+        offset += 285;
+        if (offset > 570) {
+            offset = 0;
+        }
+        sliderLine.style.left = -offset + 'px';
+    }
     // iPhone X
-    if(document.body.clientWidth <= '375') {
+    else if(document.body.clientWidth < '414') {
         offset += 340;
-        if (offset > 710) {
+        if (offset > 680) {
             offset = 0;
         }
         sliderLine.style.left = -offset + 'px';
     }
     // iPhone XR
-    else if (document.body.clientWidth >= '414') {
+    else if (document.body.clientWidth < '500') {
         offset += 379;
         if (offset > 758) {
             offset = 0;
@@ -131,11 +139,19 @@ function slideNext() {
 }
 
 function slidePrev() {
+    // iPhone SE
+    if (document.body.clientWidth < '375') {
+        offset -= 285;
+        if (offset < 0) {
+            offset = 570;
+        }
+        sliderLine.style.left = -offset + 'px';
+    }
     // iPhone X
-    if(document.body.clientWidth <= '375') {
+    else if(document.body.clientWidth <= '375') {
         offset -= 340;
         if (offset < 0) {
-            offset = 710;
+            offset = 680;
         }
         sliderLine.style.left = -offset + 'px';
     }
