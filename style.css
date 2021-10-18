@@ -36,8 +36,7 @@ html body .app .block .container .theme {
 }
 html body .app .block .container .theme i {
   display: block;
-  margin: auto;
-  text-align: center;
+  font-size: 18px;
 }
 html body .app .block .container .theme:hover {
   cursor: pointer;
