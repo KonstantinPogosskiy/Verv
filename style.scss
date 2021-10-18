@@ -81,31 +81,64 @@ html {
           .group {
             color: #FFFFFF;
             font-size: 12px;
-            padding-top: 0;
+            padding-top: 13px;
           }
 
           .paragraph {
+            position: relative;
             height: 23px;
             margin: 22px 0 0 0;
 
+            &::after {
+              z-index: 0;
+              position: absolute;
+              left: 0;
+              top: 20px;
+              content: url("img/iPhone X/Path 1.svg");
+            }
+          }
+          ._firstLine {
             &::before {
+              z-index: 0;
+              position: absolute;
+              left: 0;
+              bottom: 30px;
               content: url("img/iPhone X/Path 1.svg");
             }
           }
 
           @media screen and (min-width: 376px) {
             .paragraph {
-              height: 30px;
+              height: 33px;
+              &::after {
+                top: 25px;
+              }
+            }
+            ._firstLine {
+              &::before {
+                bottom: 50px;
+              }
             }
             .group {
-              padding-top: 10px;
+              padding-top: 25px;
             }
           }
 
           @media screen and (max-width: 374px) {
+            .group {
+              padding-top: 13px;
+            }
             .paragraph {
-              height: 15px;
-              margin: 8px 0 0 0;
+              height: 20px;
+              margin: 5px 0 0 0;
+              &::after {
+                top: 10px;
+              }
+            }
+            ._firstLine {
+              &::before {
+                bottom: 25px;
+              }
             }
           }
 
@@ -442,6 +475,7 @@ html {
 
         .girl {
           position: absolute;
+          z-index: 1;
           left: 43%;
           top: 25%;
         }
